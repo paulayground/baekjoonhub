@@ -1,12 +1,8 @@
 def solution(array):
     answer = []
     
-    max = 0
-    index = 0
-    for i, n in enumerate(array):
-        if n > max:
-            max = n
-            index = i
+    m = max(array)
+    index = array.index(m)
             
     
-    return [max, index]
+    return [m, index]
